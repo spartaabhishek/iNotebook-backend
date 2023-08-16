@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
-const uri =
-  "mongodb+srv://abhishek5soni987:xYgzytV0DgEex68i@cluster1.bfm6kw4.mongodb.net/";
+require("dotenv").config();
+const uri = process.env.MONGO_URI;
 
 const connectDB = async () => {
   try {
